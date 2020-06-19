@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block header %}Добавление книги{% endblock header %}
+
+{% block content%}
+
+<div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+
+        <form name='addbook' method="POST">
+          {% csrf_token %}
+          <div class="form-row">
+
+            <div class="form-group col-md-6">
+              <label>Название</label>
+              <input type="text" name="title" class="form-control" placeholder="Название">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Автор</label>
+              <input type="text" name="author" class="form-control" placeholder="Автор">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Год издания</label>
+              <input type="text" name="year" class="form-control" placeholder="Год издания">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Издательство</label>
+              <input type="text" name="publishing" class="form-control" placeholder="Издательство">
+            </div>
+
+
+            <div class="form-group col-md-12">
+              <label>Возможность обмена</label>
+              <input type="text" name="possibility" class="form-control" placeholder="Укажите возможен ли дистанционый обмен">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Пожелания</label>
+              <input type="text" name="wish" class="form-control" placeholder="Пожелания">
+            </div>
+
+              <div class="form-group col-md-12">
+              <label>Загрузка фотографии</label>
+                  <p><input type="file" name="image" multiple accept="image/*"></p>
+            </div>
+
+            
+          </div>
+           <input type="submit" name="submit" value="Добавить" class="btn btn-primary"/>
+        </form>
+
+        </div>
+        <div class="col-md-4">
+      </div>
+</div>
+
+{% endblock content %}

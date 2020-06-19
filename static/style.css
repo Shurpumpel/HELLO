@@ -1,0 +1,141 @@
+{% load static %}
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+/*input:valid{
+  border-color: rgb(0, 153, 0);
+  background-color: rgb(221, 255, 244);
+}*/
+
+input:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+
+.form-control, .btn, .well {
+    border-radius: 0;
+}
+.form-control {
+    border: 1px solid #f57ebd;
+}
+
+ .btn.btn-primary {
+  border-color: #996633;
+  background: #996633;
+}
+
+.btn.btn-primary:hover
+{
+  background: #996633cc;
+  border-color: #996633cc;
+}
+
+.m1
+{
+  background: #222222;
+}
+
+img
+{
+  margin-top: 10px;
+  max-width: 90%;
+  align-self: center;
+  height: 300px;
+}
+
+
+
+.header h1
+{
+  /*color: #660000; /* Цвет заголовка */
+  font-size: 24pt; /* Размер шрифта в пунктах */
+  font-weight: 900; /* Нормальное начертание текста  */
+}
+
+.row
+{
+  padding: 20px;
+  text-align: center;
+}
+
+h3
+{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h4
+{
+  text-align: center;
+}
+
+.col-md-3
+{
+  padding: 20px;
+  height: 300pt;
+}
+
+.col-md-4
+{
+  height: 300pt;
+}
+
+
+.text-right
+{
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+.text-left
+{
+  /*margin: 100px 0;  */
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.text-left1
+{
+  text-align: left;
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.text-center
+{
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+.mystyle
+{
+  font-size: 14pt;
+  background-image: url(letter19.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.p1 {
+    margin-top: 0em; /* Отступ сверху */
+    margin-bottom: 0.95em; /* Отступ снизу */
+   }

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header%}Информация о книге{% endblock header%}
+
+{% block content%}
+
+     <div class ="row">        
+        <div class="col-md-6">  
+          <p> <img src="{% static "Война и мир.jpg" %}" style="height: 375px" width="250";  align="center"></p>
+        </div>
+        <div class="col-md-6">
+          <div class="text-left">  
+            <h4> Подробная информация </h4>
+            <p><u>Название:</u> "Война и мир" </p>
+            <p><u>Автор:</u> Л.Н.Толстой </p>
+            <p><u>Год издания:</u> 2000 </p>
+            <p><u>Издательство:</u> Эксмо </p>
+            <p><u>Возможность дистанционного обмена:</u> отсутсвует </p>
+            <p><u>Пожелания:</u> Обменяю на книги Б.Васильева или М.Ю.Лермонтова </p>
+            <p><u>Контактная информация:</u> </p>
+            <p>Иванов Иван </p>
+            <p>8-800-555-35-35 </p>
+          </div>
+        </div>
+      </div>              
+
+{% endblock content %}

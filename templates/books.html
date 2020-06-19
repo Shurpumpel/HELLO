@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header%}Предложения{% endblock header %}
+
+{% block content%}
+
+<div class ="row">
+    <div class="card-columns">
+        {% if book_list.count > 0 %}
+            {% for book in book_list %}
+                <div class="card" style="background: #bdac80; padding: 20px; width: 300px; height: 500px; margin-bottom: 20px">
+                <!-- Изображение -->
+                <img class="my-card-img-top" src="{{MEDIA_URL}}{{ book.image }}">
+                <!--<img src="{% static "1984.jpg" %}" class="card-img-top" alt="..."> -->
+                <!-- Текстовый контент -->
+
+                <div class="card-body">
+                    <h6 class="card-title">{{ book.title  }}</h6>
+                    <h6 class="card-title">{{ book.author }}</h6>
+                    <p class="card-text"><a href="inform/{{ book.id }}" class="btn btn-primary">Подробнее</a></p>
+                </div>
+                </div><!-- Конец карточки -->
+
+
+            {% endfor %}
+        {%  endif %}
+
+    </div>
+</div>
+
+
+{% endblock content %}

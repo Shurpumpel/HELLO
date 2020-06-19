@@ -1,0 +1,12 @@
+{% extends "base_book.html" %}
+
+{% block Image %}<img src="{{MEDIA_URL}}{{ book.image }}">{% endblock Image %}
+
+{% block Title %}{{ book.title }}{% endblock Title %}
+{% block Author %}{{ book.author }}{% endblock Author %}
+{% block Year %}{{ book.year }}{% endblock Year %}
+{% block Iz %}{{ book.publishing }}{% endblock Iz %}
+{% block Possibility %}{{ book.possibility }}{% endblock Possibility %}
+{% block Wish %}{{ book.wish }}{% endblock Wish %}
+{% block Name %}{{ person.surname}} {{ person.name }}{% endblock Name %}
+{% block Phone %}{{ person.phone }}{% endblock Phone %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header%}Личный кабинет{% endblock header%}
+
+{% block content%}
+
+      <div class ="row">
+        <div class="col-md-6 text-left1">
+          <h4>Личная информация</h4>
+          <p class="p1"><u>Фамилия:</u> {% block Surname%}{% endblock Surname %}</p>
+          <p class="p1"><u>Имя:</u> {% block Name%}{% endblock Name %}</p>
+          <p class="p1"><u>Номер телефона:</u> {% block Phone%}{% endblock Phone %}</p>
+          <p class="p1"><u>Город:</u> {% block Town%}{% endblock Town %}</p>
+          <p class="p1"><u>Почта:</u> {% block Mail%}{% endblock Mail %}</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Информация о книгах</h4>
+
+	<a href="addbook/{{ person.id }}">Добавить книгу</a>
+    {% block books %}{% endblock books %}
+
+        </div>
+</div>
+
+{% endblock content %}
